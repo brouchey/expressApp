@@ -6,15 +6,15 @@ app.set('view engine', 'pug');	// set the view engine Pug
 app.set('views', __dirname + '/views');	// define views location
 
 app.get('/', function(req, res) {
-	res.render('index');	// .pug not required because engine is set
+	res.render('home');	// .pug not required because engine is set
 });
 
 app.get('/contact', function(req, res) {
-	res.send("<h4>Contact</h4>");
+	res.send('contact');
 });
 
 app.get('/about', function(req, res) {
-	res.send("<h4>About</h4>");
+	res.send('about');
 });
 
 app.listen(3000, function() {
