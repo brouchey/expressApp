@@ -10,11 +10,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/contact', function(req, res) {
-	res.send('contact');
+	res.render('contact');
 });
 
 app.get('/about', function(req, res) {
-	res.send('about');
+	res.render('about');
 });
 
 app.listen(3000, function() {
